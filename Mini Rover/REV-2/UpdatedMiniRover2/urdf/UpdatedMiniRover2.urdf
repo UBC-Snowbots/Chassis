@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="UpdatedMiniRover2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.052189 0.0067678 0.012927"
+        rpy="0 0 0" />
+      <mass
+        value="2.9852" />
+      <inertia
+        ixx="0.014337"
+        ixy="-1.1922E-08"
+        ixz="7.3459E-09"
+        iyy="0.019036"
+        iyz="-4.2142E-09"
+        izz="0.032935" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RockerL_Link">
+    <inertial>
+      <origin
+        xyz="8.0491E-16 -0.035 3.6082E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.013467" />
+      <inertia
+        ixx="5.5755E-06"
+        ixy="1.9214E-21"
+        ixz="4.4668E-24"
+        iyy="1.5273E-07"
+        iyz="-3.7068E-21"
+        izz="5.5755E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/RockerL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.86667 0.9098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/RockerL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RockerL_joint"
+    type="revolute">
+    <origin
+      xyz="0.011312 -0.175 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RockerL_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="WFL_Link">
+    <inertial>
+      <origin
+        xyz="-0.00030469 -0.0076992 9.7097E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.33748" />
+      <inertia
+        ixx="0.00036362"
+        ixy="-3.7017E-08"
+        ixz="5.5251E-08"
+        iyy="0.00062163"
+        iyz="-1.0625E-07"
+        izz="0.00036387" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WFL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WFL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WFL_joint"
+    type="continuous">
+    <origin
+      xyz="0.255 -0.071514 -0.19732"
+      rpy="0 0 0" />
+    <parent
+      link="RockerL_Link" />
+    <child
+      link="WFL_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="BogieL_Link">
+    <inertial>
+      <origin
+        xyz="0 -0.029525 -1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.011327" />
+      <inertia
+        ixx="3.3403E-06"
+        ixy="4.7535E-22"
+        ixz="1.5966E-23"
+        iyy="1.2812E-07"
+        iyz="-8.5513E-22"
+        izz="3.3403E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/BogieL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.86667 0.9098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/BogieL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BogieL_joint"
+    type="revolute">
+    <origin
+      xyz="-0.13419 -0.007669 -0.11241"
+      rpy="0 0 0" />
+    <parent
+      link="RockerL_Link" />
+    <child
+      link="BogieL_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="WML_Link">
+    <inertial>
+      <origin
+        xyz="-0.000263057971062963 -0.00769918748460646 0.000188444317564401"
+        rpy="0 0 0" />
+      <mass
+        value="0.33748168721985" />
+      <inertia
+        ixx="0.000363677647586356"
+        ixy="6.67990896952481E-08"
+        ixz="1.14854473653684E-07"
+        iyy="0.000621631626714055"
+        iyz="9.05417702952652E-08"
+        izz="0.000363814398215361" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WML_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WML_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WML_joint"
+    type="continuous">
+    <origin
+      xyz="0.12452 -0.063845 -0.086756"
+      rpy="0 0 0" />
+    <parent
+      link="BogieL_Link" />
+    <child
+      link="WML_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="WBL_Link">
+    <inertial>
+      <origin
+        xyz="-0.00030005 -0.0076992 0.00011063"
+        rpy="0 0 0" />
+      <mass
+        value="0.33748" />
+      <inertia
+        ixx="0.00036363"
+        ixy="-4.1733E-08"
+        ixz="6.604E-08"
+        iyy="0.00062163"
+        iyz="-1.0449E-07"
+        izz="0.00036386" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WBL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WBL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WBL_joint"
+    type="continuous">
+    <origin
+      xyz="-0.13481 -0.063845 -0.068524"
+      rpy="0 0 0" />
+    <parent
+      link="BogieL_Link" />
+    <child
+      link="WBL_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="RockerR_Link">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 0.035 2.0817E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.013467" />
+      <inertia
+        ixx="5.5755E-06"
+        ixy="2.4389E-21"
+        ixz="1.2098E-24"
+        iyy="1.5273E-07"
+        iyz="-3.2826E-21"
+        izz="5.5755E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/RockerR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.86667 0.9098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/RockerR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RockerR_joint"
+    type="revolute">
+    <origin
+      xyz="0.011312 0.175 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RockerR_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="WFR_Link">
+    <inertial>
+      <origin
+        xyz="-0.000253671161038277 0.00769918748460585 0.000200902212580817"
+        rpy="0 0 0" />
+      <mass
+        value="0.337481687219786" />
+      <inertia
+        ixx="0.000363743120576253"
+        ixy="6.86139099319741E-08"
+        ixz="1.33634988904462E-07"
+        iyy="0.000621631626714009"
+        iyz="8.91743343913024E-08"
+        izz="0.000363748925225399" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WFR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WFR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WFR_joint"
+    type="continuous">
+    <origin
+      xyz="0.2594 0.071514 -0.19154"
+      rpy="0 0 0" />
+    <parent
+      link="RockerR_Link" />
+    <child
+      link="WFR_Link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="BogieR_Link">
+    <inertial>
+      <origin
+        xyz="0 0.029525 1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.011327" />
+      <inertia
+        ixx="3.3403E-06"
+        ixy="3.9948E-22"
+        ixz="5.7125E-24"
+        iyy="1.2812E-07"
+        iyz="-1.5993E-21"
+        izz="3.3403E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/BogieR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.86667 0.9098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/BogieR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BogieR_joint"
+    type="revolute">
+    <origin
+      xyz="-0.13422 0.007669 -0.11529"
+      rpy="0 0 0" />
+    <parent
+      link="RockerR_Link" />
+    <child
+      link="BogieR_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="WMR_Link">
+    <inertial>
+      <origin
+        xyz="0.00022398 0.0076992 0.00022826"
+        rpy="0 0 0" />
+      <mass
+        value="0.33748" />
+      <inertia
+        ixx="0.00036372"
+        ixy="-8.2389E-08"
+        ixz="-1.3185E-07"
+        iyy="0.00062163"
+        iyz="7.6629E-08"
+        izz="0.00036377" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WMR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WMR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WMR_joint"
+    type="continuous">
+    <origin
+      xyz="0.12416 0.063845 -0.086625"
+      rpy="0 0 0" />
+    <parent
+      link="BogieR_Link" />
+    <child
+      link="WMR_Link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="WBR_Link">
+    <inertial>
+      <origin
+        xyz="-0.00021509 0.0076992 -0.00024176"
+        rpy="0 0 0" />
+      <mass
+        value="0.33748" />
+      <inertia
+        ixx="0.00036373"
+        ixy="-8.5103E-08"
+        ixz="-1.3309E-07"
+        iyy="0.00062163"
+        iyz="7.3603E-08"
+        izz="0.00036376" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WBR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/WBR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WBR_joint"
+    type="continuous">
+    <origin
+      xyz="-0.1348 0.063845 -0.068362"
+      rpy="0 0 0" />
+    <parent
+      link="BogieR_Link" />
+    <child
+      link="WBR_Link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="Differential_Link">
+    <inertial>
+      <origin
+        xyz="1.1102E-16 -1.1102E-16 0.0325"
+        rpy="0 0 0" />
+      <mass
+        value="0.012505" />
+      <inertia
+        ixx="4.4738E-06"
+        ixy="-2.4195E-24"
+        ixz="-3.9201E-23"
+        iyy="4.4738E-06"
+        iyz="-1.7434E-25"
+        izz="1.4182E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/Differential_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.86667 0.9098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/Differential_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Differential_joint"
+    type="revolute">
+    <origin
+      xyz="-0.16869 0 0.053808"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Differential_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LiDAR_Link">
+    <inertial>
+      <origin
+        xyz="-0.00049661 -5.3822E-08 -0.027695"
+        rpy="0 0 0" />
+      <mass
+        value="0.18287" />
+      <inertia
+        ixx="9.7142E-05"
+        ixy="3.0472E-10"
+        ixz="6.6252E-07"
+        iyy="9.5789E-05"
+        iyz="3.1638E-11"
+        izz="8.5473E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/LiDAR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.35" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/LiDAR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LiDAR_joint"
+    type="fixed">
+    <origin
+      xyz="0.253 0 0.08166"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LiDAR_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="IMU_Link">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 -1.1102E-16 -0.007"
+        rpy="0 0 0" />
+      <mass
+        value="0.0224" />
+      <inertia
+        ixx="3.3525E-06"
+        ixy="6.4296E-23"
+        ixz="-4.5478E-21"
+        iyy="3.3525E-06"
+        iyz="8.3848E-22"
+        izz="5.9733E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/IMU_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/IMU_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IMU_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.014"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="IMU_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="GPS1_Link">
+    <inertial>
+      <origin
+        xyz="1.8457E-15 0 -0.019545"
+        rpy="0 0 0" />
+      <mass
+        value="0.10424" />
+      <inertia
+        ixx="3.3117E-05"
+        ixy="-8.7805E-20"
+        ixz="1.0578E-20"
+        iyy="6.8334E-05"
+        iyz="-3.6186E-20"
+        izz="9.0122E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/GPS1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/GPS1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="GPS1_joint"
+    type="fixed">
+    <origin
+      xyz="0.1285 0.13 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="GPS1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="GPS2_Link">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 -2.2204E-16 -0.0025"
+        rpy="0 0 0" />
+      <mass
+        value="0.003125" />
+      <inertia
+        ixx="1.6927E-07"
+        ixy="-1.5034E-22"
+        ixz="-1.0595E-22"
+        iyy="1.6927E-07"
+        iyz="-3.5742E-23"
+        izz="3.2552E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/GPS2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UpdatedMiniRover2/meshes/GPS2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="GPS2_joint"
+    type="fixed">
+    <origin
+      xyz="0.1675 -0.1425 0.005"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="GPS2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
