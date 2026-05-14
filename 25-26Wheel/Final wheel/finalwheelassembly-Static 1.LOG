@@ -1,0 +1,13 @@
+
+******PCGLSS Error******
+Status:8
+Version:8.0
+PCGLSS0085
+PCGLSS0085:writeSparseFactor:valueVec tried to IO 2946 bytes. Actual IO 416 bytes
+Source File
+writereadsf.c
+Line:20
+******PCGLSS Error******
+
+Level of Message: 3
+PCGLSS0085:writeSparseFactor:valueVec tried to IO 2946 bytes. Actual IO 416 bytes
