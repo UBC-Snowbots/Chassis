@@ -1,0 +1,16 @@
+[StartTime]
+finalwheelassembly-Static 2.MFC=1m:39s
+[SolverState]
+finalwheelassembly-Static 2.MFC=2
+[MainFrame]
+finalwheelassembly-Static 2.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMECAAAAAHHBAAAAAELDAAAAAKECAAAAA
+[ShowMin]
+finalwheelassembly-Static 2.MFC=No
+[SolverType]
+finalwheelassembly-Static 2.MFC=Linear Analysis
+[StudyType]
+finalwheelassembly-Static 2.MFC=0
+[StudyName]
+finalwheelassembly-Static 2.MFC=Static 2
+[Solver]
+finalwheelassembly-Static 2.MFC=Iterative
