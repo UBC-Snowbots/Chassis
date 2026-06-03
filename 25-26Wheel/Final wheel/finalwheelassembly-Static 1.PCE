@@ -1,0 +1,6 @@
+Job:C:\Rover\Chassis\25-26Wheel\Final wheel\finalwheelassembly-Static 1	at:Mon Apr  6 18:55:07 2026
+
+******PCGLSS Error******
+Status:8
+PCGLSS0085:writeSparseFactor:valueVec tried to IO 2946 bytes. Actual IO 416 bytesVersion:8.0:PCGLSS0085:Source File:writereadsf.c:Line:20
+******PCGLSS Error******

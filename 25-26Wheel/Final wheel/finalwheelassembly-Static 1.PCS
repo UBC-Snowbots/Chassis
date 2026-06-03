@@ -1,0 +1,146 @@
+******************************************************************************
+(C) Copyright 1992-2020
+Computational Applications and System Integration Inc.
+All rights Reserved.
+******************************************************************************
+
+Job:C:\Rover\Chassis\25-26Wheel\Final wheel\finalwheelassembly-Static 1	at:Mon Apr  6 18:53:58 2026
+
+
+	Degrees of Freedom: 216426
+		DOFs per node = 6 {1,2,3,4,5,6}
+		ALL_NODE_EXT_SAME = FALSE
+	Single Point Constraints: 3906
+	Multipoint Constraints: 0
+	Elements: 68536 (0d Elements:0;1d Elements:315;2d Elements:25664;3d Elements:42557)
+		Assembled: 68536
+		Implicit: 0
+
+		 Type	   Number
+		 ----	---------
+		    4	       315
+		   49	     25664
+		   92	     42557
+
+		 Contact Elements(12,26,48,49,52): 25664
+	Nodes: 71512
+	Number of Load Cases: 1
+
+	Nonzeros in Upper Triangular part of
+	             Global Stiffness Matrix : 11344317
+	Nonzeros in Preconditioner: 6.55398e+06
+		*** Precond Reorder: MLD ***
+		*** Matrix changed: Yes ***
+		Nonzeros in V: 1271295
+		Nonzeros in factor: 4.84417e+06
+	*** Primal Preconditioner Activated ***
+	*** Edgeweight Selector: L2 distance ***
+		VTAeV: 0 Sec
+	*** Iterative Solver: CG ***
+
+	Total Operation Count: 9.15625e+10
+	Total Iterations In PCG: 1195
+	Average Iterations Per Load Case: 1195.000000
+	Input PCG Error Tolerance: 1e-07
+	Achieved PCG Error Tolerance: 9.89682e-08
+
+	DETAILS OF SOLVER CP TIME(secs)		Elapsed
+		Assembly			43
+		Preconditioner Construction	0
+		Preconditioner Factoring	1
+		Preconditioned CG		12
+******************************************************************************
+	Total PCG Solver Elapsed Time: 56 secs
+******************************************************************************
+	Available Physical Memory (RAM) : 7914.87 MB
+	Estimate of Memory Usage In CG : 153.532 MB
+	Estimate of Disk Usage   : 170.529 MB
+	CG Working Set Size with matrix outofcore : 45.9982 MB
+******************************************************************************
+	Multiply with A MFLOP Rate:13427.1 MFlops
+	Solve With Precond MFLOP Rate:5221.34 MFlops
+******************************************************************************
+	*** Parallel Processing activated ***
+		Processors: 12
+		Compute Threads: 12
+		IO Threads: 1
+		Threads in ThreadPool: 12
+******************************************************************************
+	Total Elapsed Time (Secs): 56
+******************************************************************************
+******************************************************************************
+(C) Copyright 1992-2020
+Computational Applications and System Integration Inc.
+All rights Reserved.
+******************************************************************************
+
+Job:C:\Rover\Chassis\25-26Wheel\Final wheel\finalwheelassembly-Static 1	at:Mon Apr  6 18:54:46 2026
+
+
+	Degrees of Freedom: 216426
+		DOFs per node = 6 {1,2,3,4,5,6}
+		ALL_NODE_EXT_SAME = FALSE
+	Single Point Constraints: 3906
+	Multipoint Constraints: 0
+	Elements: 68536 (0d Elements:0;1d Elements:315;2d Elements:25664;3d Elements:42557)
+		Assembled: 68536
+		Implicit: 0
+
+		 Type	   Number
+		 ----	---------
+		    4	       315
+		   49	     25664
+		   92	     42557
+
+		 Contact Elements(12,26,48,49,52): 25664
+	Nodes: 71512
+	Number of Load Cases: 1
+
+	Nonzeros in Upper Triangular part of
+	             Global Stiffness Matrix : 11344317
+	Nonzeros in Preconditioner: 6.66223e+06
+		*** Precond Reorder: MLD ***
+		*** Matrix changed: Yes ***
+		Nonzeros in V: 1270617
+		Nonzeros in factor: 4.9531e+06
+	*** Primal Preconditioner Activated ***
+	*** Edgeweight Selector: L2 distance ***
+		VTAeV: 0 Sec
+	*** Iterative Solver: CG ***
+
+	Total Operation Count: 7.96366e+10
+	Total Iterations In PCG: 1028
+	Average Iterations Per Load Case: 1028.000000
+	Input PCG Error Tolerance: 1e-07
+	Achieved PCG Error Tolerance: 9.47549e-08
+
+	DETAILS OF SOLVER CP TIME(secs)		Elapsed
+		Assembly			4
+		Preconditioner Construction	1
+		Preconditioner Factoring	0
+		Preconditioned CG		10
+******************************************************************************
+	Total PCG Solver Elapsed Time: 16 secs
+******************************************************************************
+	Available Physical Memory (RAM) : 7896.39 MB
+	Estimate of Memory Usage In CG : 154.062 MB
+	Estimate of Disk Usage   : 171.49 MB
+	CG Working Set Size with matrix outofcore : 46.5282 MB
+******************************************************************************
+	Multiply with A MFLOP Rate:7700.48 MFlops
+	Solve With Precond MFLOP Rate:6848.78 MFlops
+******************************************************************************
+	*** Parallel Processing activated ***
+		Processors: 12
+		Compute Threads: 12
+		IO Threads: 1
+		Threads in ThreadPool: 12
+******************************************************************************
+	Total Elapsed Time (Secs): 16
+******************************************************************************
+Job:C:\Rover\Chassis\25-26Wheel\Final wheel\finalwheelassembly-Static 1	at:Mon Apr  6 18:55:07 2026
+
+******PCGLSS Error******
+Status:8
+PCGLSS0085:writeSparseFactor:valueVec tried to IO 2946 bytes. Actual IO 416 bytesVersion:8.0:PCGLSS0085:Source File:writereadsf.c:Line:20
+******PCGLSS Error******
